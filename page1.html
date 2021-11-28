@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.container {
+  padding: 16px;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Work Home Page</h1>
+  <p>Check Work & Submit Your Work</p>
+</div>
+
+<div class="navbar">
+  
+  <a href="#" class="right"></a>
+</div>
+<div class="container">
+
+    <center><label for="task"><b>I am :</b></label>
+    <select onchange="myFunction(this)">
+     <option>man1</option>
+     <option>man2</option>
+     <option>man3</option>
+     <option>man4</option>
+     <option>man5</option>
+     <option>man6</option>
+     <option>man7</option>
+     <option>man8</option>
+
+     <option>man9</option>
+     <option>man10</option>
+
+    </select>
+    <!--<p><button onclick="myFunction()">Click Me</button></p>-->
+    
+
+    <p id="demo"></p>
+
+<script>
+    
+function myFunction(selTag) {
+  var x = selTag.options[selTag.selectedIndex].text;
+    document.getElementById("demo").innerHTML = " <h4> This Task For </h4>" + x  +  " : Create website layout/user interface by using standard HTML/CSS practices";
+  
+
+}
+</script>
+
+<a href="C:/Users/Admin/OneDrive/Desktop/Samriddha/page2.html">Next</a>
+
+    </center>
+    </div>
+
+</body>
+</html>
